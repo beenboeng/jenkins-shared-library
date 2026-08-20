@@ -1,5 +1,3 @@
-pushDockerImage(
-    image: 'theghost007/my-react-app',
-    tag: "${BUILD_NUMBER}",
-    credentialsId: 'dockerhub'
-)
+def call(Map config = [:]) {
+    echo "Hello from pushDockerImage step"
+}

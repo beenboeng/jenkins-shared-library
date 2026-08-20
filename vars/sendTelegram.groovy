@@ -1,3 +1,3 @@
-sendTelegram(
-    message: "Build ${BUILD_NUMBER} completed successfully!"
-)
+def call(Map config = [:]) {
+    echo "Hello from sendTelegram step"
+}
