@@ -6,5 +6,8 @@ def call(Map config = [:]) {
     echo "Pulling code from ${url}"
     echo "Branch: ${branch}"
 
-    git branch: branch, url: url
+    git(
+        branch: branch,
+        url: url
+    )
 }
