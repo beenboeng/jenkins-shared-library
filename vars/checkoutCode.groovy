@@ -3,6 +3,10 @@ def call(Map config = [:]) {
     String url = config.url
     String branch = config.get('branch', 'main')
 
+    if (!url) {
+        error "checkoutCode: url is required"
+    }
+
     echo "Pulling code from ${url}"
     echo "Branch: ${branch}"
 
